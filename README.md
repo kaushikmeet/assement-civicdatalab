@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Dataset Explorer
 
-## Getting Started
+A modern, responsive data listing application built with **Next.js 13+**, **Tailwind CSS**, and **Lucide Icons**. It allows users to explore datasets with powerful filters, sorting, pagination, and responsive card/grid views.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔍 Full-text search support
+- 🧭 Filters by **Geography**, **Sectors**, **Tags**, and **Formats**
+- 📥 Sort by recency and order
+- 🧱 Toggle between **Grid** and **List** views
+- 📄 Pagination with entries-per-page selector
+- 📱 Fully responsive for mobile & desktop
+- 🧹 Filter reset support
+- ⚡ Powered by dynamic API (`fetchDatasets`)
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js 13+](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+
+---
+
+## 📁 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── app/
+│   ├── components/
+│   │   ├── DatasetCard.tsx
+│   │   ├── FilterPanel.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── SortDropdown.tsx
+│   │   ├── ViewToggle.tsx
+│   └── utils/
+│       └── fetchDatasets.ts
+├── public/assets/
+│   └── cdl_logo.png
+├── styles/
+│   └── globals.css
+├── page.tsx
+├── layout.tsx
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. 📦 Install dependencies
+```bash
+yarn install
+# or
+npm install
+```
 
-## Learn More
+### 2. 🏃 Run the development server
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open `http://localhost:3000` in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. 🔌 API Integration
+Make sure your `fetchDatasets.ts` function is configured to hit the correct API endpoint.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📸 Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Grid View | List View |
+|-----------|-----------|
+| ![Grid](public/screens/grid-view.png) | ![List](public/screens/list-view.png) |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+Pull requests and suggestions are welcome! Please open an issue first for any feature requests.
+
+---
+
+## 📄 License
+MIT © 2025 CivicDataLab
